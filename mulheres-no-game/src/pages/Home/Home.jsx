@@ -1,13 +1,10 @@
 import { Link } from 'react-router-dom';
+import { Header } from '../../components/Header/Header'
 
 export const Home = () => {
   return (
     <div>
-      <header>
-        <p>GameHer</p>
-        <Link to="/login"><button>Login</button></Link>
-        <Link to="/cadastro"><button>Cadastre-se</button></Link>
-      </header>
+      <Header/>
       <section>
         <h1>Empoderando Mulheres no Mundo dos Jogos</h1>
         <p>Bem-vinda à nossa plataforma, onde empoderamos mulheres a iniciarem sua jornada no emocionante universo do desenvolvimento de jogos.</p>
@@ -23,7 +20,7 @@ export const Home = () => {
       <section>
         <h3>Vamos começar uma nova carreira!</h3>
         <p>Clique para logar e começar os cursos e dar um start na sua carreira!</p>
-        <button>Cadastre-se</button>
+        <Link to="/cadastro"><button>Cadastre-se</button></Link>
       </section>
       <section>
         <h4>Ao se inscrever em nossos cursos, você ganhará:</h4>

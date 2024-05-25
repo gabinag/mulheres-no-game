@@ -5,6 +5,7 @@ import './App.css'
 import { Home } from './pages/Home/Home';
 import { Login } from './pages/Login/Login';
 import { Cadastro } from './pages/Cadastro/Cadastro';
+import { Comecar } from './pages/Comecar/Comecar';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/cadastro" element={<Cadastro />} />
+        <Route path='/comecar' element={<Comecar />} />
       </Routes>
     </BrowserRouter>
   )

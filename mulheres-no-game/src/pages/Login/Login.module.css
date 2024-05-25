@@ -1,0 +1,30 @@
+.wrap {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+    align-items: center;
+  }
+  
+.container {
+    width: 300px;
+    height: 150px;
+    padding-left: 30px; 
+    }
+
+button, .container {
+    background-color: rgba(162, 37, 217, 0.2);
+    border: 1px solid #E15CF3;
+    border-radius: 20px;
+    }
+
+button {
+    margin: 1rem 0;
+    padding: 1rem;
+    font-size: 18px;
+    }
+    
+    .link {
+    color: #E15CF3;
+    text-align: end;
+    font-size: 14px;
+    }

@@ -8,6 +8,7 @@ export const Cadastro = () => {
             <h1>Cadastre-se</h1>
         </div>
         <form>
+
             <label>
                 <span>Nome completo</span>
                 <input type="text" name="nome" required placeholder="Insira seu nome"/>
@@ -20,8 +21,8 @@ export const Cadastro = () => {
             <span>Senha</span>
                 <input type="password" name="password" required placeholder="Insira sua senha"/>
             </label>
-            <button>Cadastrar-se</button>
-            <Link to="/" className={styles.link}>Já possuo uma conta</Link>
+            <button className={styles.btnForm}>Cadastrar-se</button>
+            <Link to="/login" className={styles.link}>Já possuo uma conta</Link>
         </form>
     </div>
   )

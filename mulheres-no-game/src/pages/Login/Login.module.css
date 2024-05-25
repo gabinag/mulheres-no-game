@@ -11,13 +11,13 @@
     padding-left: 30px; 
     }
 
-button, .container {
+.btnForm, .container {
     background-color: rgba(162, 37, 217, 0.2);
     border: 1px solid #E15CF3;
     border-radius: 20px;
     }
 
-button {
+.btnForm {
     margin: 1rem 0;
     padding: 1rem;
     font-size: 18px;

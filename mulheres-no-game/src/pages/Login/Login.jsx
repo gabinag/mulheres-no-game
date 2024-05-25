@@ -16,7 +16,7 @@ export const Login = () => {
             <span>Senha</span>
                 <input type="password" name="password" required placeholder="Insira sua senha"/>
             </label>
-            <button>Login</button>
+            <button className={styles.btnForm}>Login</button>
             <Link to="/cadastro" className={styles.link}>Não possuo uma conta</Link>
         </form>
     </div>

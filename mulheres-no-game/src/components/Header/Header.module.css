@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.wrapBtn {
+    display: flex;
+    gap: 1rem;
+}
+
+.btnHome {
+    padding: 10px 20px;
+    background-color: rgba(15, 155, 242, 0.2);
+    border: 1px solid #0F9BF2;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+

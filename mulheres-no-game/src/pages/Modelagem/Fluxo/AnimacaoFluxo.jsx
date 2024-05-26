@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Header } from '../../../components/Header/Header';
 import styles from '../../Fluxo/Fluxo.module.css';
 
-export const Fluxo = () => {
+export const AnimacaoFluxo = () => {
 
   return (
     <div>

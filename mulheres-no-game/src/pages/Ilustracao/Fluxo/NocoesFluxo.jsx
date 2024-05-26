@@ -1,15 +1,15 @@
 import { HiChevronDoubleRight } from "react-icons/hi";
 import { Link } from 'react-router-dom';
-import { Header } from '../../components/Header/Header';
+import { Header } from '../../../components/Header/Header';
 import styles from '../../Fluxo/Fluxo.module.css';
 
-export const Fluxo = () => {
+export const NocoesFluxo = () => {
   return (
     <div>
         <Header/>
         <div className={styles.wrapHome}>
         <div className={styles.container}>
-            <h1>Ilustração - NOções de ilustração</h1>
+            <h1>Ilustração - Noções de ilustração</h1>
             <p>Bem-vinda ao nosso curso de Noções de Desenho voltado para o desenvolvimento de jogos! Aqui, você irá explorar o fascinante mundo do desenho e aprender as bases da forma, perspectiva e composição que são essenciais para criar arte visual envolvente para jogos, com professoras incríveis na área.</p>
             <button>Inscreva-se</button>
             <h2>Como começar?</h2>

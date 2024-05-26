@@ -4,7 +4,7 @@ import { Header } from '../../components/Header/Header';
 import styles from './Fluxos.module.css';
 
 // eslint-disable-next-line react/prop-types
-export const Fluxos = ({title, paragraph, nivel1, nivel2, nivel3}) => {
+export const Fluxos = ({title, paragraph, nivel1, nivel2, nivel3, onNavigateNivel1, onNavigateNivel2, onNavigateNivel3}) => {
   return (
     <div>
         <Header/>
@@ -17,7 +17,7 @@ export const Fluxos = ({title, paragraph, nivel1, nivel2, nivel3}) => {
             <p>A seguir, apresentamos as etapas para aprender sobre o tópico escolhido:</p>
         </div>
        
-        <div className={styles.wrapHome}>
+        <div className={styles.wrapHome} onClick={onNavigateNivel1}>
           <Link to="/" className={styles.link}>
             <div className={styles.containerNivel}>
               <span className={styles.nivel}>Nível 1</span>
@@ -29,7 +29,7 @@ export const Fluxos = ({title, paragraph, nivel1, nivel2, nivel3}) => {
           </Link>
         </div>
     
-        <div className={styles.wrapHome}>
+        <div className={styles.wrapHome} onClick={onNavigateNivel2}>
           <Link to="/" className={styles.link}>
             <div className={styles.containerNivel}>
               <span className={styles.nivel}>Nível 2</span>
@@ -41,7 +41,7 @@ export const Fluxos = ({title, paragraph, nivel1, nivel2, nivel3}) => {
           </Link>
         </div>
      
-        <div className={styles.wrapHome}>
+        <div className={styles.wrapHome} onClick={onNavigateNivel3}>
           <Link to="/" className={styles.link}>
             <div className={styles.containerNivel}>
               <span className={styles.nivel}>Nível 3</span>

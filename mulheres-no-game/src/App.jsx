@@ -9,7 +9,7 @@ import { Comecar } from './pages/Comecar/Comecar';
 import { Modelagem } from './pages/Modelagem/Modelagem';
 import { Desenvolvedora } from './pages/Desenvolvedora/Desenvolvedora';
 import { DesignerSom } from './pages/DesignerSom/DesignerSom';
-import { Aula } from './pages/Aula/Aula';
+import { AulaDesenho } from './pages/Ilustracao/AulaElementos/AulaDesenho';
 import { DesenhoFluxo } from './pages/Ilustracao/Fluxo/DesenhoFluxo';
 import { NocoesFluxo } from './pages/Ilustracao/Fluxo/NocoesFluxo';
 import { PinturaFluxo } from './pages/Ilustracao/Fluxo/PinturaFluxo';
@@ -36,7 +36,7 @@ function App() {
         <Route path="/modelagem" element={<Modelagem />} />
         <Route path="/desenvolvedora" element={<Desenvolvedora />} />
         <Route path="/designerSom" element={<DesignerSom />} />
-        <Route path='/aula' element={<Aula />} />
+        <Route path='/aulaDesenho' element={<AulaDesenho />} />
         <Route path='/desenhoFluxo' element={<DesenhoFluxo />}/>
         <Route path='/pinturaFluxo' element={<PinturaFluxo />}/>
         <Route path='/nocoesFluxo' element={<NocoesFluxo />}/>

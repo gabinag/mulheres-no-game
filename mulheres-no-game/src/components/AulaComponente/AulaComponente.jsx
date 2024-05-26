@@ -1,8 +1,13 @@
-import style from "./AulaElementos.module.css";
+import style from './AulaComponente.module.css';
+import { Header } from "../../components/Header/Header";
+import { TiArrowSortedDown } from "react-icons/ti";
 
-function AulaElementos({ titulo, area, introducao, frameLink, nomeAula, tempo, instrutora }) {
+// eslint-disable-next-line react/prop-types
+export const AulaComponente = ({ titulo, area, introducao, frameLink, nomeAula, tempo, instrutora }) => {
     return (
         <>
+        <Header />
+        <section className={style.container}>
             <h1 className={style.title}>{titulo}</h1>
             <h3 className={style.subtitle}>{area}</h3>
 
@@ -13,10 +18,9 @@ function AulaElementos({ titulo, area, introducao, frameLink, nomeAula, tempo, i
                     width="100%"
                     height="315"
                     src={frameLink}
+                    frameBorder="0"
                     title="YouTube video player"
-                    frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
                     allowfullscreen>
                 </iframe>
 
@@ -26,8 +30,11 @@ function AulaElementos({ titulo, area, introducao, frameLink, nomeAula, tempo, i
                     <small>Instrutora:{instrutora}</small>
                 </div>
             </div>
+            <button className={style.btnNext}>
+                Next level: nível 2 
+                <TiArrowSortedDown />
+            </button>
+        </section>
         </>
     );
 }
-
-export default AulaElementos;

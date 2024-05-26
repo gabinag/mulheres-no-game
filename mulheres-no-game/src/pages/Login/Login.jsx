@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './Login.module.css';
 import { Link } from 'react-router-dom';
 // import logo from '../../assets/logocompleta.png'; // Caminho relativo correto

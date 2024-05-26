@@ -11,6 +11,12 @@ import { Desenvolvedora } from './pages/Desenvolvedora/Desenvolvedora';
 import { DesignerSom } from './pages/DesignerSom/DesignerSom';
 import { Fluxo } from './pages/Fluxo/Fluxo';
 import { Aula } from './pages/Aula/Aula';
+import { DesenhoFluxo } from './pages/Ilustracao/Fluxo/DesenhoFluxo';
+import { NocoesFluxo } from './pages/Ilustracao/Fluxo/NocoesFluxo';
+import { PinturaFluxo } from './pages/Ilustracao/Fluxo/PinturaFluxo';
+import { AnimacaoFluxo } from './pages/Modelagem/Fluxo/AnimacaoFluxo';
+import { Modelagem3dFluxo } from './pages/Modelagem/Fluxo/Modelagem3dFluxo';
+import { TexturizacaoFluxo } from './pages/Modelagem/Fluxo/TexturizacaoFluxo';
 
 function App() {
 
@@ -27,6 +33,12 @@ function App() {
         <Route path="/designerSom" element={<DesignerSom />} />
         <Route path="/fluxo" element={<Fluxo />} />
         <Route path='/aula' element={<Aula />} />
+        <Route path='/desenhoFluxo' element={<DesenhoFluxo />}/>
+        <Route path='/pinturaFluxo' element={<PinturaFluxo />}/>
+        <Route path='/nocoesFluxo' element={<NocoesFluxo />}/>
+        <Route path='/modelagemFluxo' element={<Modelagem3dFluxo />}/>
+        <Route path='/animacaoFluxo' element={<AnimacaoFluxo />}/>
+        <Route path='/texturizacaoFluxo' element={<TexturizacaoFluxo />}/>
       </Routes>
     </BrowserRouter>
   )

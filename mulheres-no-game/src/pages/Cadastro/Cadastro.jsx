@@ -1,10 +1,6 @@
-import styles from "../Cadastro/Cadastro.module.css";
-import { useState } from 'react';
-import { Link } from "react-router-dom";
-import logo from "../../assets/logocompleta.png";
-import { auth } from "../../services/firebaseConfig";
-import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
-
+import styles from '../Cadastro/Cadastro.module.css';
+import { Link } from 'react-router-dom';
+import logo from '../../assets/logocompleta.png'; 
 
 export const Cadastro = () => {
   const [email, setEmail] = useState("");
@@ -23,11 +19,11 @@ export const Cadastro = () => {
 
   return (
     <div className={styles.wrap}>
-      <div className={styles.container}>
-        <h1>
-          <img src={logo} alt="Logo" className={styles.logo} />
-        </h1>
-      </div>
+        <div className={styles.container}>
+            <h1>
+                <img src={logo} alt="Logo" className={styles.logo} />
+            </h1>
+        </div>
 
       <form className={styles.form}>
         <label>

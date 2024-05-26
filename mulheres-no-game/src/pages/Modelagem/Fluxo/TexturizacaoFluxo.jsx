@@ -1,19 +1,21 @@
 import { HiChevronDoubleRight } from "react-icons/hi";
 import { Link } from 'react-router-dom';
-import { Header } from '../../components/Header/Header';
-import styles from '../Fluxo/Fluxo.module.css';
+import { Header } from '../../../components/Header/Header';
+import styles from '../../Fluxo/Fluxo.module.css';
 
 export const Fluxo = () => {
+
   return (
     <div>
         <Header/>
         <div className={styles.wrapHome}>
         <div className={styles.container}>
-            <h1>Ilustração - Desenho</h1>
-            <p>Bem-vinda ao nosso curso de desenho voltado para o desenvolvimento de jogos! Aqui, você irá explorar o fascinante mundo da arte digital e aprender a criar personagens, cenários e elementos visuais que dão vida aos jogos, com professoras incríveis na área.</p>
+            <h1>Modeladora - Texturização</h1>
+            <p>Bem-vindo ao nosso curso de Texturização voltado para o desenvolvimento de jogos! Aqui, você irá explorar o fascinante mundo das texturas digitais e aprender a criar superfícies realistas e estilizadas que adicionam profundidade e detalhe aos modelos 3D, com professoras incríveis na área.</p>
             <button>Inscreva-se</button>
             <h2>Como começar?</h2>
             <p>A seguir, apresentamos as etapas para aprender sobre o tópico escolhido:</p>
+
         </div>
        
         <div className={styles.wrapHome}>
@@ -23,7 +25,7 @@ export const Fluxo = () => {
                 <div className={styles.ajustarIcone}>
                   <HiChevronDoubleRight size={60} />
                 </div>
-              <span className={styles.descricao}>Comece com a base dos desenhos</span>
+              <span className={styles.descricao}>Faça personagens realistas</span>
             </div>
           </Link>
         </div>
@@ -35,7 +37,7 @@ export const Fluxo = () => {
                 <div className={styles.ajustarIcone}>
                   <HiChevronDoubleRight size={60} />
                 </div>
-              <span className={styles.descricao}>Comece com a base dos desenhos</span>
+              <span className={styles.descricao}>Aplique texturas</span>
             </div>
           </Link>
         </div>
@@ -47,7 +49,7 @@ export const Fluxo = () => {
               <div className={styles.ajustarIcone}>
                   <HiChevronDoubleRight size={60} />
                 </div>
-              <span className={styles.descricao}>Comece com a base dos desenhos</span>
+              <span className={styles.descricao}>Criando criaturas</span>
             </div>
           </Link>
         </div>

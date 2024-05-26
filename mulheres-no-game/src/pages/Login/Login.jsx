@@ -1,9 +1,7 @@
-import { useState } from "react";
-import styles from "./Login.module.css";
-import { Link } from "react-router-dom";
-import logo from "../../assets/logocompleta.png";
-import { auth } from "../../services/firebaseConfig";
-import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
+import React from 'react';
+import styles from './Login.module.css';
+import { Link } from 'react-router-dom';
+import logo from '../../assets/logocompleta.png'; // Caminho relativo correto
 
 export const Login = () => {
   const [email, setEmail] = useState("");
@@ -30,7 +28,7 @@ export const Login = () => {
     <div className={styles.wrap}>
       <div className={styles.container}>
         <h1>
-          <img src={logo} alt="Logo" className={styles.logo} />
+          {/* <img src={logo} alt="Logo" className={styles.logo} /> */}
         </h1>
       </div>
 

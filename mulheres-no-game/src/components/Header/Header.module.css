@@ -5,6 +5,13 @@
     box-shadow: 2px 10px 36px -17px rgba(0,0,0,0.67);
 }
 
+.header p {
+    align-self: center;
+    color: #6DA5C8;
+    font-size: 20px;
+    font-weight: 500;
+}
+
 .wrapBtn {
     display: flex;
     gap: 1rem;
@@ -17,4 +24,3 @@
     border-radius: 15px;
     cursor: pointer;
   }
-

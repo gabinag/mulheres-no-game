@@ -16,6 +16,12 @@ import { PinturaFluxo } from './pages/Ilustracao/Fluxo/PinturaFluxo';
 import { AnimacaoFluxo } from './pages/Modelagem/Fluxo/AnimacaoFluxo';
 import { Modelagem3dFluxo } from './pages/Modelagem/Fluxo/Modelagem3dFluxo';
 import { TexturizacaoFluxo } from './pages/Modelagem/Fluxo/TexturizacaoFluxo';
+import { ProgramacaoFluxo } from './pages/Desenvolvedora/Fluxo/ProgramcaoFluxo';
+import { DesignJogosFluxo } from './pages/Desenvolvedora/Fluxo/DesignJogosFluxo';
+import { ResolucaoProbFluxo } from './pages/Desenvolvedora/Fluxo/ResolucaoProbFluxo';
+import { ComposicaoMusical } from './pages/DesignerSom/Fluxo/ComposicaoMusicalFluxo';
+import { EdicaoAudioFluxo } from './pages/DesignerSom/Fluxo/EdicaoAudioFluxo';
+import { MixagemFluxo } from './pages/DesignerSom/Fluxo/MixagemFluxo';
 
 function App() {
 
@@ -37,6 +43,12 @@ function App() {
         <Route path='/modelagemFluxo' element={<Modelagem3dFluxo />}/>
         <Route path='/animacaoFluxo' element={<AnimacaoFluxo />}/>
         <Route path='/texturizacaoFluxo' element={<TexturizacaoFluxo />}/>
+        <Route path='/programacaoFLuxo' element={<ProgramacaoFluxo />}/>
+        <Route path='/designJogosFluxo' element={<DesignJogosFluxo />}/>
+        <Route path='/resolucaoProbFluxo' element={<ResolucaoProbFluxo />}/>
+        <Route path='/composicaoMusicalFluxo' element={<ComposicaoMusical />}/>
+        <Route path='/edicaoAudioFluxo' element={<EdicaoAudioFluxo />}/>
+        <Route path='/mixagemFluxo' element={<MixagemFluxo />}/>
       </Routes>
     </BrowserRouter>
   )

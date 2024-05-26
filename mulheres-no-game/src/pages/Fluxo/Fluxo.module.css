@@ -1,0 +1,58 @@
+.wrapHome {
+    padding: 0 4rem;
+}
+
+.container h1{
+    font-size: 40px;
+}
+
+h2{
+    font-weight: 400;
+}
+
+.container{
+    padding-left: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+.containerNivel{
+    background-color: rgba(191, 65, 66, 0.2);
+    padding: 2rem;
+    border-radius: 20px;
+    border: 1px solid #BF4142;
+    margin-bottom: 2.5rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.ajustarIcone{
+    margin-right: 7%;
+}
+
+.link {
+    text-decoration: none; /* Remover sublinhado */
+  }
+  
+  .nivel {
+    margin-left: 8%; /* Espaçamento entre os elementos */
+    margin-right: 7%;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+
+  .centralizarIcone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .centralizarImagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }

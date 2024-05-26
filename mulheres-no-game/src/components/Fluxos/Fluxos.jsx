@@ -1,13 +1,13 @@
 import { HiChevronDoubleRight } from "react-icons/hi";
 import { Link } from 'react-router-dom';
-import { Header } from '../../components/Header/Header';
+import { HeaderLogado } from '../../components/HeaderLogado/HeaderLogado';
 import styles from './Fluxos.module.css';
 
 // eslint-disable-next-line react/prop-types
 export const Fluxos = ({title, paragraph, nivel1, nivel2, nivel3, onNavigateNivel1}) => {
   return (
     <div>
-        <Header/>
+        <HeaderLogado/>
         <div className={styles.wrapHome}>
         <div className={styles.container}>
             <h1>{title}</h1>

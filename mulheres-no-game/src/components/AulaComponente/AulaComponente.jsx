@@ -1,12 +1,12 @@
 import style from './AulaComponente.module.css';
-import { Header } from "../../components/Header/Header";
+import { HeaderLogado } from "../../components/HeaderLogado/HeaderLogado";
 import { TiArrowSortedDown } from "react-icons/ti";
 
 // eslint-disable-next-line react/prop-types
 export const AulaComponente = ({ titulo, area, introducao, frameLink, nomeAula, tempo, instrutora }) => {
     return (
         <>
-        <Header />
+        <HeaderLogado />
         <section className={style.container}>
             <h1 className={style.title}>{titulo}</h1>
             <h3 className={style.subtitle}>{area}</h3>

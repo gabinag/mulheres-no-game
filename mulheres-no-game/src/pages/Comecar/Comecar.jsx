@@ -1,6 +1,6 @@
 import style from "./Comecar.module.css";
 import Card from "../../components/Card/Card";
-import { Header } from '../../components/Header/Header';
+import { HeaderLogado } from '../../components/HeaderLogado/HeaderLogado';
 import { useNavigate } from 'react-router-dom';
 
 export const Comecar = () => {
@@ -9,7 +9,7 @@ export const Comecar = () => {
 
     return (
         <main>
-            <Header/>
+            <HeaderLogado/>
             <h1 className={style.title}>Vamos começar?</h1>
             <h3 className={style.subtitle}>Escolha qual área você tem interesse de se aprofundar e dê um start para a aventura!</h3>
 

@@ -9,7 +9,6 @@ export const AreaEspecifica = ({title, paragraph, item1, item2, item3, item4}) =
         <div className={styles.container}>
             <h1>{title}</h1>
             <p>{paragraph}</p>
-            <button>Inscreva-se</button>
             <div className={styles.wrapHabilidades}>
                 <h2>Habilidades que você irá adquirir</h2>
                 <ul>

@@ -1,6 +1,7 @@
 import { FaPlay } from "react-icons/fa";
 import style from "./Card.module.css";
 
+// eslint-disable-next-line react/prop-types
 function Card({ name, text, link, color }) {
     const cardStyle = {
         borderColor: color,
@@ -19,6 +20,7 @@ function Card({ name, text, link, color }) {
             </div>
             <a href={link} className={style.icon} style={iconStyle}><FaPlay /></a>
         </div>
+
     );
 }
 

@@ -1,10 +1,11 @@
-import { FaPlay } from "react-icons/fa";
 import style from "./Comecar.module.css";
 import Card from "../../components/Card/Card";
+import { Header } from '../../components/Header/Header';
 
 export const Comecar = () => {
     return (
         <main>
+            <Header/>
             <h1 className={style.title}>Vamos começar?</h1>
             <h3 className={style.subtitle}>Escolha qual área você tem interesse de se aprofundar e dê um start para a aventura!</h3>
 

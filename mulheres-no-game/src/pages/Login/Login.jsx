@@ -1,7 +1,9 @@
 import styles from './Login.module.css';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 export const Login = () => {
+  const navigate = useNavigate();
   return (
     <div className={styles.wrap}>
         <div className={styles.container}>
@@ -16,7 +18,7 @@ export const Login = () => {
             <span>Senha</span>
                 <input type="password" name="password" required placeholder="Insira sua senha"/>
             </label>
-            <button className={styles.btnForm}>Login</button>
+            <button className={styles.btnForm} onClick={() => navigate('/comecar')}>Login</button>
             <Link to="/cadastro" className={styles.link}>Não possuo uma conta</Link>
         </form>
     </div>

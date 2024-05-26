@@ -24,7 +24,7 @@ export const Comecar = () => {
                     name="Ilustração"
                     text="Veja sobre a modelagem de personagens e cenários"
                     color="#E15CF3"
-                    onNavigate={() => navigate('comecar/ilustracao')}
+                    onNavigate={() => navigate('/ilustracao')}
                 />
 
                 <Card

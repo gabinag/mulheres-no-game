@@ -1,8 +1,10 @@
 import { AreaEspecifica } from "../../components/AreaEspecifica/AreaEspecifica";
 import Card from "../../components/Card/Card";
 import styles from "../Ilustracao/Ilustracao.module.css"
+import { useNavigate } from "react-router-dom";
 
 export const Desenvolvedora = () => {
+    const navigate = useNavigate();
   return (
 
     <div>
@@ -18,16 +20,19 @@ export const Desenvolvedora = () => {
                 name="Programação"
                 text="Aprenda a linguagem mais utilizada no mercado"
                 color="#0F9BF2"
+                onNavigate={() => navigate('/programacaoFLuxo')}
             />
             <Card
                 name="Design de jogos"
                 text="Veja sobre os princípios do design de jogos"
                 color="#E15CF3"
+                onNavigate={() => navigate('/designJogosFluxo')}
             />
             <Card
                 name="Resolução de problemas"
                 text="Pratique e desenvolva projetos para o seu portfólio"
                 color="#BF4142"
+                onNavigate={() => navigate('/resolucaoProbFluxo')}
             />
         </section>
     </div>

@@ -1,8 +1,10 @@
 import { AreaEspecifica } from "../../components/AreaEspecifica/AreaEspecifica";
 import Card from "../../components/Card/Card";
-import styles from "../Ilustracao/Ilustracao.module.css"
+import styles from "../Ilustracao/Ilustracao.module.css";
+import { useNavigate } from "react-router-dom";
 
 export const DesignerSom = () => {
+    const navigate = useNavigate();
   return (
 
     <div>
@@ -18,16 +20,19 @@ export const DesignerSom = () => {
                 name="Edição de áudio"
                 text="Veja sobre Logic Pro, Ableton Live, FL Studio"
                 color="#0F9BF2"
+                onNavigate={() => navigate('/edicaoAudioFluxo')}
             />
             <Card
                 name="Composição musical"
                 text="Criação de músicas e trilhas sonoras"
                 color="#E15CF3"
+                onNavigate={() => navigate('/composicaoMusicalFluxo')}
             />
             <Card
                 name="Mixagem e masterização"
                 text="equilibrar os elementos do som e finalização"
                 color="#BF4142"
+                onNavigate={() => navigate('/mixagemFluxo')}
             />
         </section>
     </div>

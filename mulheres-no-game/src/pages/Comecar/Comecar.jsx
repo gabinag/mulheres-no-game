@@ -18,6 +18,7 @@ export const Comecar = () => {
                     name="Modelagem"
                     text="Veja sobre a modelagem de personagens e cenários"
                     color="#0F9BF2"
+                    onNavigate={() => navigate('/modelagem')}
                 />
 
                 <Card
@@ -31,12 +32,14 @@ export const Comecar = () => {
                     name="Desenvolvedora"
                     text="Veja sobre a modelagem de personagens e cenários"
                     color="#8B8B8B"
+                    onNavigate={() => navigate('/desenvolvedora')}
                 />
 
                 <Card
                     name="Designer de som"
                     text="Veja sobre a modelagem de personagens e cenários"
                     color="#BF4142"
+                    onNavigate={() => navigate('/designerSom')}
                 />
             </section>
         </main>

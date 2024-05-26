@@ -5,7 +5,7 @@ import logo from '../../assets/logonome.png';
 export const Header = () => {
   return (
     <div className={styles.header}>
-        <img src={logo} alt="" />
+        <img src={logo} alt="Logotipo" />
         <div className={styles.wrapBtn}>
             <Link to="/login"><button className={styles.btnHome}>Login</button></Link>
             <Link to="/cadastro"><button className={styles.btnHome}>Cadastre-se</button></Link>

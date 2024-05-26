@@ -1,10 +1,30 @@
-import React from 'react';
-import styles from './Login.module.css';
-import { Link } from 'react-router-dom';
-import logo from '../../assets/logocompleta.png'; // Caminho relativo correto
+import { useState } from "react";
+import styles from "./Login.module.css";
+import { Link } from "react-router-dom";
+import logo from "../../assets/logocompleta.png";
+import { auth } from "../../services/firebaseConfig";
+import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 
 export const Login = () => {
-  console.log(styles); // Verifique se os estilos estão sendo importados corretamente
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const [signInWithEmailAndPassword, user, loading, error] =
+    useSignInWithEmailAndPassword(auth);
+
+  const handleSignIn = (e) => {
+    e.preventDefault();
+    signInWithEmailAndPassword(email, password);
+  };
+
+  if (loading) {
+    return <p>Loading...</p>;
+  }
+  if (user) {
+    return console.log(user);
+  }
+
+  console.log(styles);
 
   return (
     <div className={styles.wrap}>
@@ -17,15 +37,33 @@ export const Login = () => {
       <form className={styles.form}>
         <label>
           <span>E-mail</span>
-          <input type="email" name="email" required placeholder="Insira seu e-mail"/>
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="Insira seu e-mail"
+            onChange={(e) => setEmail(e.target.value)}
+          />
         </label>
         <label>
           <span>Senha</span>
-          <input type="password" name="password" required placeholder="Insira sua senha"/>
+          <input
+            type="password"
+            name="password"
+            required
+            placeholder="Insira sua senha"
+            onChange={(e) => setPassword(e.target.value)}
+          />
         </label>
-        <button className={styles.btnForm}>Login</button>
-        <Link to="/cadastro" className={styles.link}>Não possuo uma conta</Link>
-        <Link to="/" className={styles.backButton}>Voltar para a Home</Link>
+        <button onClick={handleSignIn} className={styles.btnForm}>
+          Login
+        </button>
+        <Link to="/cadastro" className={styles.link}>
+          Não possuo uma conta
+        </Link>
+        <Link to="/" className={styles.backButton}>
+          Voltar para a Home
+        </Link>
       </form>
     </div>
   );

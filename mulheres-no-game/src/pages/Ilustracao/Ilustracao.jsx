@@ -7,7 +7,7 @@ export const Ilustracao = () => {
     <div>
         <AreaEspecifica 
         title="Ilustração" 
-        paragraph="O ilustrador é o artista responsável por criar ilustrações finalizadas que serão usadas para promover o jogo no mercado, como pôsteres, arte de capa, wallpapers, banners e até mesmo o logo do jogo." 
+        paragraph="A ilustradora é a artista responsável por criar ilustrações finalizadas que serão usadas para promover o jogo no mercado, como pôsteres, arte de capa, wallpapers, banners e até mesmo o logo do jogo." 
         item1="Noções de desenho" 
         item2="Noções de cores" 
         item3="Pintura Digital" 

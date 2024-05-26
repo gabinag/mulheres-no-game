@@ -15,14 +15,14 @@ export const Comecar = () => {
 
             <section className={style.container}>
                 <Card
-                    name="Modelagem"
+                    name="Modeladora"
                     text="Veja sobre a modelagem de personagens e cenários"
                     color="#0F9BF2"
                     onNavigate={() => navigate('/modelagem')}
                 />
 
                 <Card
-                    name="Ilustração"
+                    name="Ilustradora"
                     text="Veja sobre a modelagem de personagens e cenários"
                     color="#E15CF3"
                     onNavigate={() => navigate('/ilustracao')}

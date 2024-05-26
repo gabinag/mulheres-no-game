@@ -1,8 +1,12 @@
 import style from "./Comecar.module.css";
 import Card from "../../components/Card/Card";
 import { Header } from '../../components/Header/Header';
+import { useNavigate } from 'react-router-dom';
 
 export const Comecar = () => {
+
+    const navigate = useNavigate();
+
     return (
         <main>
             <Header/>
@@ -20,6 +24,7 @@ export const Comecar = () => {
                     name="Ilustração"
                     text="Veja sobre a modelagem de personagens e cenários"
                     color="#E15CF3"
+                    onNavigate={() => navigate('comecar/ilustracao')}
                 />
 
                 <Card

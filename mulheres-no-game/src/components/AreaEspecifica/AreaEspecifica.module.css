@@ -1,5 +1,5 @@
 .container {
-    padding: 2rem 4rem;
+    padding: 2rem 4rem 0;
 }
 
 .container h1 {
@@ -22,7 +22,7 @@
     background-color: #1B0A40;
     border: 1px solid #A225D9;
     border-radius: 20px;
-    margin: 4rem 0;
+    margin: 4rem 0 3rem;
     padding: 0 0 3rem 3rem;
 }
 

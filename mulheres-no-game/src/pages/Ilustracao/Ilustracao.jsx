@@ -1,6 +1,9 @@
-import { AreaEspecifica } from "../../components/AreaEspecifica/AreaEspecifica"
+import { AreaEspecifica } from "../../components/AreaEspecifica/AreaEspecifica";
+import Card from "../../components/Card/Card";
+import style from "./Ilustracao.module.css";
 
 export const Ilustracao = () => {
+
   return (
     <div>
         <AreaEspecifica 
@@ -10,6 +13,23 @@ export const Ilustracao = () => {
         item2="Noções de cores" 
         item3="Pintura Digital" 
         item4="Ferramentas de ilustração"/>
+        <section className={style.wrapCards}>
+            <Card
+                name="Desenho"
+                text="Veja sobre a modelagem de personagens e cenários"
+                color="#0F9BF2"
+            />
+            <Card
+                name="Pintura"
+                text="Veja sobre a modelagem de personagens e cenários"
+                color="#E15CF3"
+            />
+            <Card
+                name="Noções"
+                text="Veja sobre a modelagem de personagens e cenários"
+                color="#BF4142"
+            />
+        </section>
     </div>
   )
 }

@@ -15,17 +15,17 @@ export const Ilustracao = () => {
         <section className={style.wrapCards}>
             <Card
                 name="Desenho"
-                text="Veja sobre a modelagem de personagens e cenários"
+                text="Veja sobre o início de uma desenhista"
                 color="#0F9BF2"
             />
             <Card
                 name="Pintura"
-                text="Veja sobre a modelagem de personagens e cenários"
+                text="Veja sobre pintura digital "
                 color="#E15CF3"
             />
             <Card
                 name="Noções"
-                text="Veja sobre a modelagem de personagens e cenários"
+                text="Veja sobre conceitos básico da ilustração"
                 color="#BF4142"
             />
         </section>

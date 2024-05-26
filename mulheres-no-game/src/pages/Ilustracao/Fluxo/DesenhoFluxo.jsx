@@ -1,7 +1,7 @@
 import { HiChevronDoubleRight } from "react-icons/hi";
 import { Link } from 'react-router-dom';
 import { Header } from '../../components/Header/Header';
-import styles from '../Fluxo/Fluxo.module.css';
+import styles from '../../Fluxo/Fluxo.module.css';
 
 export const Fluxo = () => {
   return (
@@ -35,7 +35,7 @@ export const Fluxo = () => {
                 <div className={styles.ajustarIcone}>
                   <HiChevronDoubleRight size={60} />
                 </div>
-              <span className={styles.descricao}>Comece com a base dos desenhos</span>
+              <span className={styles.descricao}>Ângulos e dimensões</span>
             </div>
           </Link>
         </div>
@@ -47,7 +47,7 @@ export const Fluxo = () => {
               <div className={styles.ajustarIcone}>
                   <HiChevronDoubleRight size={60} />
                 </div>
-              <span className={styles.descricao}>Comece com a base dos desenhos</span>
+              <span className={styles.descricao}>Desenhos mais realistas</span>
             </div>
           </Link>
         </div>

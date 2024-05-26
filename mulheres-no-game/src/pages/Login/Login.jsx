@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Login.module.css';
 import { Link } from 'react-router-dom';
-import logo from '../../assets/logocompleta.png'; // Caminho relativo correto
+// import logo from '../../assets/logocompleta.png'; // Caminho relativo correto
 
 export const Login = () => {
   console.log(styles); // Verifique se os estilos estão sendo importados corretamente
@@ -10,7 +10,7 @@ export const Login = () => {
     <div className={styles.wrap}>
       <div className={styles.container}>
         <h1>
-          <img src={logo} alt="Logo" className={styles.logo} />
+          {/* <img src={logo} alt="Logo" className={styles.logo} /> */}
         </h1>
       </div>
 

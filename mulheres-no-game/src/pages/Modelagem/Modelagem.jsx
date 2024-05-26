@@ -3,7 +3,8 @@ import Card from "../../components/Card/Card";
 import styles from "../Ilustracao/Ilustracao.module.css"
 
 export const Modelagem = () => {
-  return (
+  
+    return (
 
     <div>
         <AreaEspecifica 
@@ -18,6 +19,7 @@ export const Modelagem = () => {
                 name="Modelagem 3D"
                 text="Veja sobre Blender e Maya"
                 color="#0F9BF2"
+                onNavigate={() => (window.location.href = '/fluxo/FluxoModelagem3d.jsx')}
             />
             <Card
                 name="Texturização"

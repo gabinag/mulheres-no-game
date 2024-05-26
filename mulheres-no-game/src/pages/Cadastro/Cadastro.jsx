@@ -1,13 +1,13 @@
 import styles from '../Cadastro/Cadastro.module.css';
 import { Link } from 'react-router-dom';
-import logo from '../../assets/logocompleta.png'; 
+// import logo from '../../assets/logocompleta.png'; 
 
 export const Cadastro = () => {
   return (
     <div className={styles.wrap}>
         <div className={styles.container}>
             <h1>
-                <img src={logo} alt="Logo" className={styles.logo} />
+                {/* <img src={logo} alt="Logo" className={styles.logo} /> */}
             </h1>
         </div>
 

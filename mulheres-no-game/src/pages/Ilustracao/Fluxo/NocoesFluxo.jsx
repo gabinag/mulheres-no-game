@@ -1,7 +1,7 @@
 import { HiChevronDoubleRight } from "react-icons/hi";
 import { Link } from 'react-router-dom';
 import { Header } from '../../components/Header/Header';
-import styles from '../Fluxo/Fluxo.module.css';
+import styles from '../../Fluxo/Fluxo.module.css';
 
 export const Fluxo = () => {
   return (
@@ -9,8 +9,8 @@ export const Fluxo = () => {
         <Header/>
         <div className={styles.wrapHome}>
         <div className={styles.container}>
-            <h1>Ilustração - Desenho</h1>
-            <p>Bem-vinda ao nosso curso de desenho voltado para o desenvolvimento de jogos! Aqui, você irá explorar o fascinante mundo da arte digital e aprender a criar personagens, cenários e elementos visuais que dão vida aos jogos, com professoras incríveis na área.</p>
+            <h1>Ilustração - NOções de ilustração</h1>
+            <p>Bem-vinda ao nosso curso de Noções de Desenho voltado para o desenvolvimento de jogos! Aqui, você irá explorar o fascinante mundo do desenho e aprender as bases da forma, perspectiva e composição que são essenciais para criar arte visual envolvente para jogos, com professoras incríveis na área.</p>
             <button>Inscreva-se</button>
             <h2>Como começar?</h2>
             <p>A seguir, apresentamos as etapas para aprender sobre o tópico escolhido:</p>
@@ -23,7 +23,7 @@ export const Fluxo = () => {
                 <div className={styles.ajustarIcone}>
                   <HiChevronDoubleRight size={60} />
                 </div>
-              <span className={styles.descricao}>Comece com a base dos desenhos</span>
+              <span className={styles.descricao}>Como criar o seu portfolio</span>
             </div>
           </Link>
         </div>
@@ -35,7 +35,7 @@ export const Fluxo = () => {
                 <div className={styles.ajustarIcone}>
                   <HiChevronDoubleRight size={60} />
                 </div>
-              <span className={styles.descricao}>Comece com a base dos desenhos</span>
+              <span className={styles.descricao}>Ferramentas Auxiliares</span>
             </div>
           </Link>
         </div>
@@ -47,7 +47,7 @@ export const Fluxo = () => {
               <div className={styles.ajustarIcone}>
                   <HiChevronDoubleRight size={60} />
                 </div>
-              <span className={styles.descricao}>Comece com a base dos desenhos</span>
+              <span className={styles.descricao}>Teoria Cromática</span>
             </div>
           </Link>
         </div>

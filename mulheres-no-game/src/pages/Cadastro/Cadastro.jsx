@@ -1,20 +1,27 @@
 import styles from '../Cadastro/Cadastro.module.css';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import logo from '../../assets/logocompleta.png'; 
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { auth } from '../../services/firebaseConfig';
-
 
 export const Cadastro = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [createUserWithEmailAndPassword, user, loading, error] =
     useCreateUserWithEmailAndPassword(auth);
+  const navigate = useNavigate();
 
   function handleSignUp(e) { 
     e.preventDefault();
-    createUserWithEmailAndPassword(email, password); 
+    createUserWithEmailAndPassword(email, password)
+      .then(() => {
+        // Redireciona para a página de login após o cadastro ser concluído
+        navigate('/login');
+      })
+      .catch(error => {
+        console.error('Erro ao criar usuário:', error);
+      });
   }
 
   if (loading) {
@@ -67,7 +74,6 @@ export const Cadastro = () => {
         </Link>
         {/* Botão de voltar para a home */}
         <Link to="/" className={styles.backButton}>
-          {" "}
           Voltar para home
         </Link>
       </form>

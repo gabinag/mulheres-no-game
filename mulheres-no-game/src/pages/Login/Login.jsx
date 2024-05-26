@@ -1,6 +1,6 @@
 import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import styles from "./Login.module.css";
-import { Link } from "react-router-dom";
 import logo from "../../assets/logocompleta.png";
 import { auth } from "../../services/firebaseConfig";
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
@@ -8,23 +8,26 @@ import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 export const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
+  const navigate = useNavigate();
 
   const handleSignIn = (e) => {
     e.preventDefault();
-    signInWithEmailAndPassword(email, password);
+    signInWithEmailAndPassword(email, password)
+      .then(() => {
+        if (user) {
+          navigate('/comecar');
+        }
+      })
+      .catch(error => {
+        console.error('Erro ao fazer login:', error);
+      });
   };
 
   if (loading) {
     return <p>Loading...</p>;
   }
-  if (user) {
-    return console.log(user);
-  }
-
-  console.log(styles);
 
   return (
     <div className={styles.wrap}>

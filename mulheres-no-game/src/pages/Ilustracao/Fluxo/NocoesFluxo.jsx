@@ -10,9 +10,7 @@ export const NocoesFluxo = () => {
         nivel1="Como criar o seu portfolio" 
         onNavigateNivel1={() => navigate('/aulaDesenho')}
         nivel2="Ferramentas Auxiliares"
-        onNavigateNivel2={() => navigate('/aulaDesenho')}
         nivel3="Teoria Cromática"
-        onNavigateNivel3={() => navigate('/aulaDesenho')}
         />
     </div>
   )

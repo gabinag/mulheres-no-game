@@ -1,5 +1,6 @@
 import {Fluxos} from '../../../components/Fluxos/Fluxos';
 import { useNavigate } from "react-router-dom";
+
 export const Modelagem3dFluxo = () => {
   const navigate = useNavigate();
   return (
@@ -10,9 +11,7 @@ export const Modelagem3dFluxo = () => {
         nivel1="Fundamentos da modelagem 3D" 
         onNavigateNivel1={() => navigate('/aulaDesenho')}
         nivel2="Mapas e texturização"
-        onNavigateNivel2={() => navigate('/aulaDesenho')}
         nivel3="Configuração de cena"
-        onNavigateNivel3={() => navigate('/aulaDesenho')}
         />
     </div>
   )

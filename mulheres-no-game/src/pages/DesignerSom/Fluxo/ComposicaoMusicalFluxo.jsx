@@ -10,9 +10,7 @@ export const ComposicaoMusical = () => {
         nivel1="Conhecendo sobre os tipos de música" 
         onNavigateNivel1={() => navigate('/aulaDesenho')}
         nivel2="Sentimentos em música"
-        onNavigateNivel2={() => navigate('/aulaDesenho')}
         nivel3="Como ajustar cada trilha sonora com seus projetos"
-        onNavigateNivel3={() => navigate('/aulaDesenho')}
         />
     </div>
   )

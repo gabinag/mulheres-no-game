@@ -10,9 +10,7 @@ export const AnimacaoFluxo = () => {
         nivel1="Introdução ao Maya e animações individuais" 
         onNavigateNivel1={() => navigate('/aulaDesenho')}
         nivel2="Animação dos elementos da interface do usuário (IU)"
-        onNavigateNivel2={() => navigate('/aulaDesenho')}
         nivel3="Exercícios práticos de animação"
-        onNavigateNivel3={() => navigate('/aulaDesenho')}
         />
     </div>
   )

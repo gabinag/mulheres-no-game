@@ -29,7 +29,7 @@ export const Fluxos = ({title, paragraph, nivel1, nivel2, nivel3, onNavigateNive
           </Link>
         </div>
     
-        <div className={styles.wrapHome} onClick={onNavigateNivel2}>
+        <div className={styles.wrapHome} onClick={onNavigateNivel1}>
           <Link to="/" className={styles.link}>
             <div className={styles.containerNivel}>
               <span className={styles.nivel}>Nível 2</span>
@@ -41,7 +41,7 @@ export const Fluxos = ({title, paragraph, nivel1, nivel2, nivel3, onNavigateNive
           </Link>
         </div>
      
-        <div className={styles.wrapHome} onClick={onNavigateNivel3}>
+        <div className={styles.wrapHome} onClick={onNavigateNivel1}>
           <Link to="/" className={styles.link}>
             <div className={styles.containerNivel}>
               <span className={styles.nivel}>Nível 3</span>

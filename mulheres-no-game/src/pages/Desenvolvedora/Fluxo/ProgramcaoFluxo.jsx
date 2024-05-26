@@ -10,9 +10,7 @@ export const ProgramacaoFluxo = () => {
         nivel1="Lógica de programação" 
         onNavigateNivel1={() => navigate('/aulaDesenho')}
         nivel2="Mecânicas na programação"
-        onNavigateNivel2={() => navigate('/aulaDesenho')}
         nivel3="Jogabilidade e técnicas"
-        onNavigateNivel3={() => navigate('/aulaDesenho')}
         />
     </div>
   )

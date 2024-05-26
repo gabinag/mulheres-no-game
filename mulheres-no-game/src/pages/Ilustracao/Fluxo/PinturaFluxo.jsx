@@ -10,9 +10,7 @@ export const PinturaFluxo = () => {
         nivel1="Fundamentos de design" 
         onNavigateNivel1={() => navigate('/aulaDesenho')}
         nivel2="Pintando personagens"
-        onNavigateNivel2={() => navigate('/aulaDesenho')}
         nivel3="Photobashing vs Matte Painting."
-        onNavigateNivel3={() => navigate('/aulaDesenho')}
         />
     </div>
   )

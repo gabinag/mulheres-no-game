@@ -10,9 +10,7 @@ export const DesignJogosFluxo = () => {
         nivel1="Introdução ao mercado de jogos" 
         onNavigateNivel1={() => navigate('/aulaDesenho')}
         nivel2="Jogabilidade e mecância" 
-        onNavigateNivel2={() => navigate('/aulaDesenho')}
         nivel3="Design de níveis e narrativa"
-        onNavigateNivel3={() => navigate('/aulaDesenho')}
         />
     </div>
   )

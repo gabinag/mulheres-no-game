@@ -10,9 +10,7 @@ export const DesenhoFluxo = () => {
         nivel1="Comece com a base dos desenhos" 
         onNavigateNivel1={() => navigate('/aulaDesenho')}
         nivel2="Ângulos e dimensões" 
-        onNavigateNivel2={() => navigate('/aulaDesenho')}
         nivel3="Desenhos mais realistas"
-        onNavigateNivel3={() => navigate('/aulaDesenho')}
         />
     </div>
   )

@@ -10,9 +10,7 @@ export const ResolucaoProbFluxo = () => {
         nivel1="Fundamentos da resolução" 
         onNavigateNivel1={() => navigate('/aulaDesenho')}
         nivel2="Garantia de qualidade"
-        onNavigateNivel2={() => navigate('/aulaDesenho')}
         nivel3="Correções de bugs"
-        onNavigateNivel3={() => navigate('/aulaDesenho')}
         />
     </div>
   )

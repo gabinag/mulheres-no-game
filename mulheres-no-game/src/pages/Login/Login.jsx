@@ -32,12 +32,11 @@ export const Login = () => {
   return (
     <div className={styles.wrap}>
       <div className={styles.container}>
-        <h1>
-          <img src={logo} alt="Logo" className={styles.logo} />
-        </h1>
+        <img src={logo} alt="Logo" className={styles.logo} />
       </div>
 
       <form className={styles.form}>
+        <h1>Login</h1>
         <label>
           <span>E-mail</span>
           <input

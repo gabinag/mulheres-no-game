@@ -4,7 +4,7 @@ import { Header } from '../../components/Header/Header';
 import styles from './Fluxos.module.css';
 
 // eslint-disable-next-line react/prop-types
-export const Fluxos = ({title, paragraph, nivel1, nivel2, nivel3, onNavigateNivel1, onNavigateNivel2, onNavigateNivel3}) => {
+export const Fluxos = ({title, paragraph, nivel1, nivel2, nivel3, onNavigateNivel1}) => {
   return (
     <div>
         <Header/>

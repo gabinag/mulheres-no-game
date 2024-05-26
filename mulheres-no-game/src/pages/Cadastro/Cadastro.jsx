@@ -30,13 +30,11 @@ export const Cadastro = () => {
 
   return (
     <div className={styles.wrap}>
-        <div className={styles.container}>
-            <h1>
-                <img src={logo} alt="Logo" className={styles.logo} />
-            </h1>
-        </div>
-
+      <div className={styles.container}>
+          <img src={logo} alt="Logo" className={styles.logo} />
+      </div>
       <form className={styles.form}>
+      <h1>Cadastro</h1>
         <label>
           <span>Nome completo</span>
           <input

@@ -1,0 +1,36 @@
+.container {
+    padding: 2rem 4rem;
+}
+
+.container h1 {
+    font-size: 40px;
+}
+
+.container p {
+    margin: 2rem 0;
+}
+
+.container button {
+    background-color: #5EA800;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 16px;
+}
+
+.wrapHabilidades {
+    background-color: #1B0A40;
+    border: 1px solid #A225D9;
+    border-radius: 20px;
+    margin: 4rem 0;
+    padding: 0 0 3rem 3rem;
+}
+
+.wrapHabilidades h2 {
+    font-size: 25px;
+}
+
+.wrapHabilidades li {
+    margin-left: 1rem;
+    margin-top: 1rem;
+}

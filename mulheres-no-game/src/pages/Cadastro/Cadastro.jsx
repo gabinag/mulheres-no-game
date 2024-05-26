@@ -1,6 +1,10 @@
 import styles from '../Cadastro/Cadastro.module.css';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/logocompleta.png'; 
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { auth } from '../../services/firebaseConfig';
+
 
 export const Cadastro = () => {
   const [email, setEmail] = useState("");

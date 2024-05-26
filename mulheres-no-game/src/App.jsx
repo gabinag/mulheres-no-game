@@ -10,6 +10,7 @@ import { Modelagem } from './pages/Modelagem/Modelagem';
 import { Desenvolvedora } from './pages/Desenvolvedora/Desenvolvedora';
 import { DesignerSom } from './pages/DesignerSom/DesignerSom';
 import { Fluxo } from './pages/Fluxo/Fluxo';
+import { Aula } from './pages/Aula/Aula';
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
         <Route path="/desenvolvedora" element={<Desenvolvedora />} />
         <Route path="/designerSom" element={<DesignerSom />} />
         <Route path="/fluxo" element={<Fluxo />} />
+        <Route path='/aula' element={<Aula />} />
       </Routes>
     </BrowserRouter>
   )

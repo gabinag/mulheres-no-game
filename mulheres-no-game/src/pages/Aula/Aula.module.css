@@ -1,0 +1,19 @@
+.container{
+    padding: 4.8rem;
+}
+
+.btnNext{
+    background-color: #FBFBFB38;
+    border: 1px solid #FBFBFB;
+    border-radius: 10px;
+
+    color: #ffff;
+
+    font-size: 28px;
+
+    margin-top: 3.8rem;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+

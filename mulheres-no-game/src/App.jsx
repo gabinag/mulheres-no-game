@@ -9,7 +9,6 @@ import { Comecar } from './pages/Comecar/Comecar';
 import { Modelagem } from './pages/Modelagem/Modelagem';
 import { Desenvolvedora } from './pages/Desenvolvedora/Desenvolvedora';
 import { DesignerSom } from './pages/DesignerSom/DesignerSom';
-import { Fluxo } from './pages/Fluxo/Fluxo';
 import { Aula } from './pages/Aula/Aula';
 import { DesenhoFluxo } from './pages/Ilustracao/Fluxo/DesenhoFluxo';
 import { NocoesFluxo } from './pages/Ilustracao/Fluxo/NocoesFluxo';
@@ -31,7 +30,6 @@ function App() {
         <Route path="/modelagem" element={<Modelagem />} />
         <Route path="/desenvolvedora" element={<Desenvolvedora />} />
         <Route path="/designerSom" element={<DesignerSom />} />
-        <Route path="/fluxo" element={<Fluxo />} />
         <Route path='/aula' element={<Aula />} />
         <Route path='/desenhoFluxo' element={<DesenhoFluxo />}/>
         <Route path='/pinturaFluxo' element={<PinturaFluxo />}/>
